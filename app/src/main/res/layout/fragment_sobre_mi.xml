@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/perfil"
+        android:contentDescription="@string/perfil"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_background"/>
+
+        <TextView
+            android:id="@+id/title_sobre_mi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sobre Mí"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:lineSpacingExtra="4dp"
+            android:text="¡Hola! Mi nombre es Alvaro y soy una persona apasionada por la tecnología, el deporte y el entretenimiento. La programación es una de mis mayores aficiones, especialmente el desarrollo de backend. Disfruto construyendo sistemas robustos y eficientes que puedan solucionar problemas reales, optimizar procesos y crear experiencias digitales impactantes. Para mí, el backend es como el 'motor invisible' que impulsa la tecnología, y me encanta formar parte de ese núcleo esencial.&#10;&#10;Además de mi interés por el mundo de la tecnología, tengo un profundo amor por los deportes y el ejercicio físico. Uno de mis deportes favoritos es el boxeo, que me enseña disciplina, resistencia y enfoque, tanto dentro como fuera del ring. También disfruto del baloncesto, donde encuentro una combinación perfecta de estrategia, trabajo en equipo y agilidad.&#10;&#10;Por otro lado, los videojuegos ocupan un lugar especial en mi vida. Los considero no solo una forma de entretenimiento, sino también una fuente de inspiración. Me encanta explorar mundos virtuales, analizar mecánicas de juego y, a veces, imaginar cómo se desarrollaron los sistemas detrás de ellos. Jugar me ayuda a desconectar, pero también me inspira como programador, especialmente en el diseño de lógica y estructuras interactivas.&#10;&#10;Me considero una persona creativa, curiosa y siempre en busca de nuevos desafíos, ya sea diseñando una arquitectura backend compleja, aprendiendo nuevas tecnologías o enfrentándome a un nuevo oponente en el ring. Esta mezcla de habilidades técnicas y pasión por el movimiento y la estrategia me define y me impulsa a dar lo mejor de mí en todo lo que hago.&#10;&#10;A continuacion te dejo un poco de mis conocimientos en cuanto al mundo de la programacion, ¡Gracias por conocer un poco más sobre mí! 😊"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title_languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lenguajes"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <GridLayout
+                android:id="@+id/grid_languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/java"
+                    android:contentDescription="Java" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/js"
+                    android:contentDescription="JavaScript" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/html"
+                    android:contentDescription="HTML" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/css"
+                    android:contentDescription="CSS" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/scss"
+                    android:contentDescription="SCSS" />
+            </GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/title_technologies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tecnologías"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <GridLayout
+                android:id="@+id/grid_technologies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/bootstrap"
+                    android:contentDescription="Bootstrap" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/react"
+                    android:contentDescription="React" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/angular"
+                    android:contentDescription="Angular" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/springboot"
+                    android:contentDescription="Spring Boot" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:src="@drawable/android_studio"
+                    android:contentDescription="Android Studio" />
+            </GridLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text_favoritos_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis Aficiones Favoritas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/text_favoritos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No hay favoritos aún"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

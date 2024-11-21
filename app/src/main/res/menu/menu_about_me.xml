@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="FAV"
+        android:icon="@drawable/baseline_stars_24"
+        android:id="@+id/favButton"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Sobre mi"
+        android:id="@+id/aboutMeButton"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="Mi codigo"
+        android:id="@+id/myCodeButton"
+        app:showAsAction="never"
+        />
+</menu>
